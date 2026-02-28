@@ -1,12 +1,9 @@
-//Task 1
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Represents a household participating in the Eco-Points program.
- */
+
 public class Household implements Serializable {
     private String id;
     private String name;
@@ -20,7 +17,7 @@ public class Household implements Serializable {
         this.name = name;
         this.address = address;
         this.joinDate = LocalDate.now();
-        this.events = new ArrayList<>(); //Task 2
+        this.events = new ArrayList<>(); 
         this.totalPoints = 0.0;
     }
 
